@@ -19,8 +19,15 @@ public abstract class AbstractClass {
     public abstract void PrimitiveOperation1();
     public abstract void PrimitiveOperation2();
     
+    // 钩子方法，子类决定是否执行方法
+    public boolean hookMethod() {
+        return true;
+    }
+    
     public void TemplateMethod() {
         PrimitiveOperation1();
-        PrimitiveOperation2();
+        if(hookMethod()) {
+            PrimitiveOperation2();
+        }
     }
 }
