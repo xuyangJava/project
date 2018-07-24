@@ -33,7 +33,7 @@ public class LuceneTester {
         numIndexed = tester.index();
         long endTime = System.currentTimeMillis();
         System.out.println(numIndexed + " File indexed, time taken: " + (endTime - startTime) + " ms");
-        tester.search("日期");
+        tester.search("set");
     }
 
     public int index() {

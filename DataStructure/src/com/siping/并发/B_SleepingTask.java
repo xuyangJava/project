@@ -11,7 +11,6 @@ public class B_SleepingTask extends B_LiftOff {
     public void run() {
         try {
             while (countDown-- > 0) {
-                System.out.println(status());
 
                 TimeUnit.MILLISECONDS.sleep(1000);
             }

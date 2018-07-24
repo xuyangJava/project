@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * 余弦定理计算文本相似度
+ * 利用余弦相似度计算文本相似度
  *
  */
 public class Cosine {
@@ -65,7 +66,7 @@ public class Cosine {
 
             return denominator / Math.sqrt(sqdoc1 * sqdoc2);// 余弦计算
         } else {
-            throw new NullPointerException(" the Document is null or have not cahrs!!");
+            throw new NullPointerException(" the Document is null or have not chars!!");
         }
     }
 
@@ -97,7 +98,7 @@ public class Cosine {
 
     public static void main(String[] args) {
         String str1 = "余弦定理算法：doc1 与 doc2 相似度为：0.9954971, 耗时：22mm";
-        String str2 = "余弦定理算法：doc1 和doc2 相似度为：0.99425095, 用时：33mm";
+        String str2 = "余弦定理算法：doc1 和doc2 相似度为：0.99425095, 用时：22mm";
         long start = System.currentTimeMillis();
         double Similarity = Cosine.getSimilarity(str1, str2);
         System.out.println("用时:" + (System.currentTimeMillis() - start));
