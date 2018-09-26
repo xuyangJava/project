@@ -1,7 +1,7 @@
 package com.siping.leetcode.链表;
 
 /**
- * 合并两个有序链表
+ * 21.合并两个有序链表
  */
 public class MergeTwoLists {
     
